@@ -1,0 +1,240 @@
+
+/* estilizando body */
+body {
+    place-items: center;
+    margin: 0;
+    padding: 0;
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* estilizando o link antes de ele ser tocado */
+a{
+    color: #454b3d;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* estilizando o link para quando o mouse estiver sobre ele */
+a:hover{
+    font-weight: bold;
+}
+
+/* estilizando o cabeçalho */
+header {
+    place-items: center;
+    width: 90%;
+    height: 9vh;
+    font-size: 1vw;
+    padding: 1vh 5vw;
+    background-color: gainsboro;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #6f756b;
+    position: sticky;
+    top: 0;
+}
+
+/* ------------------------- */
+
+main {
+    color: #454b3d;
+    background-color:#6f756b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* estilizando a div que contem a imagem e o texto */
+.img_txt {
+    width: 90%;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vh 5vw;
+    gap: 10%;
+    text-align: center;
+}
+
+#eusorrindo {
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+}
+
+/* estilizando a parte do texto */
+.img_txt div {
+    text-align: left;
+    width: 40%;
+    color: rgb(99, 89, 89);
+    font-size: 1vw;
+}
+
+#meutexto {
+    width: 80%
+}
+
+/* estilizando a div que contem os hobbies e o ranking */
+.hobbies_rank {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    color: aliceblue;
+}
+
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    color:#6f756b
+}
+
+.ranking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    color:#6f756b;
+} 
+
+.ranking ol {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.hobbies ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+li {
+    display:flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    background-color: aliceblue;
+    width: 6vw;
+    height: 20vh;
+    border-radius: 8px;
+    font-size: small;
+    padding: 2%;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.hobbies p, .ranking p {
+    color: aliceblue;
+    width: 40%;
+}
+
+#frase_hobbies {
+    display: flex;
+    align-items: flex-end;
+    flex-direction:column;
+    width: 90%;
+    text-align: right;
+}
+
+#frase_rank {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    width: 90%;
+    text-align: left;
+}
+
+/* ------------------ */
+
+.formulario {
+    width: 90%;
+    height:20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#caixas {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+}
+
+#caixas input {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    padding: 0 1rem;
+    font-size: 1rem;
+}
+
+#caixas textarea {
+    width: 100%;
+    height: 20%;
+    border-radius: 8px;
+    border: none;
+    padding: 1rem;
+}
+
+#caixas button {
+    transform: translateX(300%);
+    width: 127px;
+    height: 39px;
+    border-radius: 8px;
+    border: none;
+}
+
+.formulario h4 {
+    display: flex;
+    align-items: left;
+    width: 95%;
+    font-size: 1.2rem;
+    color: aliceblue;
+} 
+
+/* footer */
+
+footer {
+    display:flex;
+    justify-content: center;
+    gap: 10rem;
+    width: 90%;
+    height: 7vh;
+    padding: 2vh 5vw;
+    background-color: aliceblue;
+}
+
+footer nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+#redes a img {
+    width: 32px;
+    height: 32px;
+}
+
+#redes {
+    display: flex;
+    gap: 20px;
+}
