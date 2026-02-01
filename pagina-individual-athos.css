@@ -145,6 +145,17 @@ li {
     font-weight: bold;
 }
 
+/* colocando o ranking em alguns */
+.diferente{
+    justify-content: space-between;
+}
+
+.numero {
+    display:flex;
+    width: 100%;
+
+}
+
 .hobbies p, .ranking p {
     color: aliceblue;
     width: 40%;
@@ -271,3 +282,96 @@ footer nav{
 
 /* ----- Responsividade -------- */
 
+@media screen and (max-width: 431px){
+
+    /* -------Header------ */
+    header{
+        font-size: 0.8rem;
+    }
+
+    /* --------Main-------- */
+
+    /* -- Imagem e Texto -- */
+
+    /* alterando a direcao */
+    .img_txt {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* redimensionando a imagem */
+    #eusorrindo {
+        width: 50%;
+    }
+
+    /* redimensionando texto */
+    .img_txt div {
+        width: 90%
+    }
+
+    /* redimensionando texto */
+    #meutexto {
+        width:100%;
+    }
+
+    /* -- Caixas -- */
+
+    /* estilizando a que contem hobbies e ranking */
+    .hobbies_rank {
+        flex-direction: column;
+    }
+
+    /* mudando as caixas */
+    li {
+        width: 104px;
+        height: 150px;
+    }
+
+    /* mudancas comuns entre as caixas */
+    .hobbies ul, .ranking ol {
+        width: 90vw;
+        flex-wrap: wrap;
+    }
+
+    /* adicionando uma margem ao topo do ranking*/
+    .ranking {
+        margin-top: 20px;
+    }
+
+    /* mudando o posicionamento das frases */
+    #frase_rank, #frase_hobbies {
+        width: 90vw;
+        justify-content: flex-start;
+    }   
+
+    /* -- Feedback -- */
+
+    /* redimensionando caixa input */
+    #caixas input {
+        height: 5vh;
+    }
+
+    /* redimensionando caixa textarea */
+    #caixas textarea {
+        height: 5vh;
+        padding: 1px 1rem;
+    }
+
+    /* mexendo no botao */
+    #caixas button{
+        transform: none;
+        width: 20vw;
+    }
+
+    /* --------Footer--------- */
+    footer{
+        box-sizing: border-box;
+        padding: 5px;
+        height: 10vh;
+    }
+
+    footer nav{
+        flex-direction: column-reverse;
+        gap: 5px;
+    }
+}
